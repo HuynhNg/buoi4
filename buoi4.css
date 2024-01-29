@@ -1,0 +1,251 @@
+body{
+    padding: 100px;
+}
+.container{
+    display: block;
+    width: 480px;
+    height: 360px;
+    background-image: url("./background.jpg");
+    padding: 1em 0 4em 4em;
+    box-sizing: border-box;
+    position: relative;
+    transition-duration: 4s;
+    background-size: cover;
+      transition: filter 0.5s;
+}
+.box{
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -525px;
+    left: 225px;
+    transition-duration: 2s;
+}
+.line{
+    width: 650px;
+    height: 360px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: rotate(45deg);
+}
+.box1{
+    display: flex;
+    position: relative;
+    width: 150px;
+    padding: 0px 20px 0px;
+    top: 120px;
+    left: 220px;
+    border: 1px solid;
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+    border: 0px solid;
+    border-right: 5px solid;
+    gap:0px;
+    color: transparent;
+    transition-duration:2s ;
+}
+.container:hover{
+    filter: hue-rotate(330deg); 
+
+}
+.container:hover .box{
+    transform: translate(-700px,700px);
+}
+.container:hover .box1{
+    color: rgb(234, 219, 219);
+}
+.p{
+    font-size: xx-large;
+    color: rgb(234, 219, 219);
+}
+.p2{
+    font-size: larger;
+    margin: 0px;
+}
+span{
+    font-weight: bold;
+}
+/* code transition apollo */
+
+
+.loading{
+    display: flex;
+    width: 500px;
+    height: 200px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: rgb(18, 83, 18);
+    gap: 20px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(219, 209, 209);
+    animation-name: bulge;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes bulge{
+    10%{
+        width: 60px;
+        height: 60px;
+    }
+    20%{
+        width: 70px;
+        height: 70px;
+    }
+    30%{
+        width: 80px;
+        height: 80px;
+    }
+    40%{
+        width: 90px;
+        height: 90px;
+    }
+    50%{
+        width: 100px;
+        height: 100px;
+    }
+    60%{
+        width: 90px;
+        height: 90px;
+    }
+    70%{
+        width: 80px;
+        height: 80px;
+    }
+    80%{
+        width: 70px;
+        height: 70px;
+    }
+    90%{
+        width: 60px;
+        height: 60px;
+    }
+    100%{
+        width: 50px;
+        height: 50px;
+    }
+}
+.boxIcon{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.icon2{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(219, 209, 209);;
+    animation-name: bulge2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bulge2{
+    10%{
+        width: 80px;
+        height: 80px;
+    }
+    20%{
+        width: 90px;
+        height: 90px;
+    }
+    30%{
+        width: 100px;
+        height: 100px;
+    }
+    40%{
+        width: 90px;
+        height: 90px;
+    }
+    50%{
+        width: 80px;
+        height: 80px;
+    }
+    60%{
+        width: 70px;
+        height: 70px;
+    }
+    70%{
+        width: 60px;
+        height: 60px;
+    }
+    80%{
+        width: 50px;
+        height: 50px;
+    }
+    90%{
+        width: 60px;
+        height: 60px;
+    }
+    100%{
+        width: 70px;
+        height: 70px;
+    }
+}
+.icon3{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color:rgb(219, 209, 209);;
+    animation-name: bulge3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bulge3{
+    10%{
+        width: 100px;
+        height: 100px;
+    }
+    20%{
+        width: 90px;
+        height: 90px;
+    }
+    30%{
+        width: 80px;
+        height: 80px;
+    }
+    40%{
+        width: 70px;
+        height: 70px;
+    }
+    50%{
+        width: 60px;
+        height: 60px;
+    }
+    60%{
+        width: 50px;
+        height: 50px;
+    }
+    70%{
+        width: 60px;
+        height: 60px;
+    }
+    80%{
+        width: 70px;
+        height: 70px;
+    }
+    90%{
+        width: 80px;
+        height: 80px;
+    }
+    100%{
+        width: 90px;
+        height: 90px;
+    }
+}
